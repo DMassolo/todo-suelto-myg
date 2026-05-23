@@ -652,7 +652,7 @@
       tbody.innerHTML = `<tr><td colspan="8" class="empty-table">No hay productos. ¡Agregá el primero!</td></tr>`;
       return;
     }
-    tbody.innerHTML = productos.map(p => `
+    tbody.innerHTML = [...productos].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')).map(p => `
       <tr>
         <td class="td-nombre">${p.nombre}</td>
         <td>${p.marca || '—'}</td>

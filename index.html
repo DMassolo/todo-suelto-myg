@@ -519,7 +519,7 @@
           (p.marca || '').toLowerCase().includes(busq) ||
           (p.descripcion || '').toLowerCase().includes(busq);
         return coincideTipo && coincideBusq;
-      });
+      }).sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
 
       const total = filtrados.length;
       document.getElementById('contador').textContent =
