@@ -62,7 +62,7 @@
     "cantidad": 10,
     "tipo": "unidad",
     "descripcion": "Rollo grande",
-    "imagen": "",
+    "imagen": "https://raw.githubusercontent.com/dmassolo/todo-suelto-myg/main/img/6.png",
     "disponible": true
   }
 ]
