@@ -59,7 +59,7 @@
     "nombre": "Rollo de Cocina",
     "marca": "Generica",
     "precio": 3000,
-    "cantidad": 10,
+    "cantidad": 20,
     "tipo": "unidad",
     "descripcion": "Rollo grande",
     "imagen": "https://raw.githubusercontent.com/dmassolo/todo-suelto-myg/main/img/6.png",
