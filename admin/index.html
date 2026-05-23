@@ -741,7 +741,7 @@
     const status = document.getElementById('img-upload-status');
     status.style.display = 'block';
     status.textContent = '⏳ Subiendo imagen...';
-    const filename = `img/${productoId}.${imagenPendiente.ext}`;
+    const filename = `img/${productoId}-${Date.now()}.${imagenPendiente.ext}`;
     const content  = imagenPendiente.base64.split(',')[1];
     let sha = null;
     try {
