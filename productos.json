@@ -196,5 +196,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv2zkd6vs",
+    "nombre": "Esponja bronce",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 2000,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
