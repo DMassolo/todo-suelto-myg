@@ -108,5 +108,16 @@
     "descripcion": "5000 ml fragancias: bebé, chanel. Lavadero, cony, vainicoco, jazmin,, frutilla",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiupz2a4tf",
+    "nombre": "Escibas",
+    "marca": "",
+    "tipo": "unidad",
+    "precio": 5800,
+    "cantidad": 2,
+    "descripcion": "Escoba de madera laqueada",
+    "imagen": "",
+    "disponible": true
   }
 ]
