@@ -110,13 +110,13 @@
     "disponible": true
   },
   {
-    "id": "mpiupz2a4tf",
-    "nombre": "Escibas",
-    "marca": "",
+    "id": "mpiurm8ifam",
+    "nombre": "Escoba",
+    "marca": "Generica",
     "tipo": "unidad",
-    "precio": 5800,
-    "cantidad": 2,
-    "descripcion": "Escoba de madera laqueada",
+    "precio": 4500,
+    "cantidad": 4,
+    "descripcion": "",
     "imagen": "",
     "disponible": true
   }
