@@ -482,5 +482,16 @@
     "descripcion": "Colores celete y rosa",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiwcc9z067",
+    "nombre": "Vaso stanley",
+    "marca": "Stanley",
+    "tipo": "unidad",
+    "precio": 25000,
+    "cantidad": 1,
+    "descripcion": "Solo color celeste",
+    "imagen": "",
+    "disponible": true
   }
 ]
