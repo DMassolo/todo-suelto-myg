@@ -795,11 +795,13 @@
     abrirModal();
   }
 
-  function eliminarProducto(id) {
+  async function eliminarProducto(id) {
     if (!confirm('¿Eliminar este producto?')) return;
     productos = productos.filter(p => p.id !== id);
     renderTabla();
-    toast('Producto eliminado', 'ok');
+    toast('Guardando...', 'ok');
+    const ok = await guardarEnGitHub();
+    toast(ok ? '✓ Producto eliminado y publicado' : 'Eliminado — configurá GitHub para publicar', ok ? 'ok' : 'err');
   }
 
   async function guardarProducto() {
@@ -825,10 +827,13 @@
       productos.push({ id, nombre, marca, tipo, precio, cantidad, descripcion: desc, imagen: imagen || '', disponible: true });
     }
 
+    const accion = editId ? 'actualizado' : 'agregado';
     cerrarModal();
     renderTabla();
-    toast(editId ? 'Producto actualizado' : 'Producto agregado', 'ok');
     editId = null;
+    toast('Guardando en GitHub...', 'ok');
+    const ok = await guardarEnGitHub();
+    toast(ok ? `✓ Producto ${accion} y publicado` : `Producto ${accion} — configurá GitHub para publicar`, ok ? 'ok' : 'err');
   }
 
   // ═══════════════════════════════════════════
