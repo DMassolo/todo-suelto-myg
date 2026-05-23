@@ -372,5 +372,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw1tt5og4",
+    "nombre": "Alimento para perros adulto",
+    "marca": "Sabrositos",
+    "tipo": "suelto",
+    "precio": 2300,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
