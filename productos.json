@@ -64,5 +64,16 @@
     "descripcion": "Rollo grande",
     "imagen": "https://raw.githubusercontent.com/dmassolo/todo-suelto-myg/main/img/6.png",
     "disponible": true
+  },
+  {
+    "id": "mpith4yxfp2",
+    "nombre": "Lavarropas",
+    "marca": "Wirpooolll",
+    "tipo": "caja",
+    "precio": 100,
+    "cantidad": 60,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
