@@ -229,5 +229,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv8v2suw2",
+    "nombre": "Esponja para auto",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 1900,
+    "cantidad": 4,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
