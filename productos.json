@@ -416,5 +416,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw47njizl",
+    "nombre": "Mopa con rueditas",
+    "marca": "Magic mop",
+    "tipo": "unidad",
+    "precio": 14000,
+    "cantidad": 2,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
