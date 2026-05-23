@@ -295,5 +295,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivtvlz669",
+    "nombre": "Rollo de cocina grande",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 3000,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
