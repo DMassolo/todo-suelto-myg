@@ -51,7 +51,7 @@
     "cantidad": 20,
     "tipo": "pack",
     "descripcion": "4 rollos higiénicos grandes",
-    "imagen": "",
+    "imagen": "https://raw.githubusercontent.com/DMassolo/todo-suelto-myg/main/img/5.jpg",
     "disponible": true
   },
   {
