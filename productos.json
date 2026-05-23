@@ -141,5 +141,16 @@
     "descripcion": "Fuenton de 14 Litros",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiuyuqz3qa",
+    "nombre": "Balde",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 5600,
+    "cantidad": 3,
+    "descripcion": "Balde de 10 Litros colores disponibles en negro y azul",
+    "imagen": "",
+    "disponible": true
   }
 ]
