@@ -504,5 +504,16 @@
     "descripcion": "Solo en rosa con azul",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiwe2lmu41",
+    "nombre": "Botellitas de plastico",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 7000,
+    "cantidad": 2,
+    "descripcion": "Colores celeste y roja",
+    "imagen": "",
+    "disponible": true
   }
 ]
