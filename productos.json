@@ -185,5 +185,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv2exb3c9",
+    "nombre": "Esponja acero",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 600,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
