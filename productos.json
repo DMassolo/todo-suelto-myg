@@ -88,13 +88,13 @@
     "disponible": true
   },
   {
-    "id": "mpiueem6ciu",
-    "nombre": "Limpia vidrio",
+    "id": "mpiugnfu7qm",
+    "nombre": "Guantes de latex",
     "marca": "Generica",
-    "tipo": "suelto",
-    "precio": 2000,
+    "tipo": "unidad",
+    "precio": 2300,
     "cantidad": 6,
-    "descripcion": "1 Litro",
+    "descripcion": "Talles M, L, XXL",
     "imagen": "",
     "disponible": true
   }
