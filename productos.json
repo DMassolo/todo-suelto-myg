@@ -218,5 +218,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv8c7o5qg",
+    "nombre": "Esponja de baño",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 500,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
