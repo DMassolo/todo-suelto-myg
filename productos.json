@@ -306,5 +306,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivvvr7mf5",
+    "nombre": "Bolsa de consorcio 60 x 90",
+    "marca": "Mellis",
+    "tipo": "pack",
+    "precio": 1100,
+    "cantidad": 20,
+    "descripcion": "Paquete de 10 unidades",
+    "imagen": "",
+    "disponible": true
   }
 ]
