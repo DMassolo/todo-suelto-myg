@@ -394,5 +394,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw31o9bij",
+    "nombre": "Alimento para perros adulto",
+    "marca": "Dog selection",
+    "tipo": "suelto",
+    "precio": 2900,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
