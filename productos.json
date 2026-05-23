@@ -339,5 +339,16 @@
     "descripcion": "Paquete de 10 unidades",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivyiuqm8f",
+    "nombre": "Canasto para ropa",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 7500,
+    "cantidad": 5,
+    "descripcion": "Solo color rosa",
+    "imagen": "",
+    "disponible": true
   }
 ]
