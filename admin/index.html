@@ -721,7 +721,7 @@
   function cargarImagenEnForm(imagen) {
     if (imagen) {
       document.getElementById('f-imagen-url').value = imagen;
-      document.getElementById('img-preview').src = imagen;
+      document.getElementById('img-preview').src = imagen + '?v=' + Date.now();
       document.getElementById('img-preview-wrap').style.display = 'block';
       document.getElementById('img-placeholder').style.display = 'none';
     } else {
@@ -759,15 +759,17 @@
         body: JSON.stringify(body)
       });
       if (put.ok) {
-        const data = await put.json();
-        status.textContent = '✓ Imagen subida';
-        return data.content.download_url;
+        // Construimos la URL manualmente — download_url puede venir null para binarios
+        const imageUrl = `https://raw.githubusercontent.com/${owner}/${repo}/main/${filename}`;
+        status.textContent = '✓ Imagen subida correctamente';
+        return imageUrl;
       } else {
-        status.textContent = '⚠ Error al subir imagen';
+        const err = await put.json();
+        status.textContent = `⚠ Error: ${err.message || put.status}`;
         return '';
       }
-    } catch {
-      status.textContent = '⚠ Error al subir imagen';
+    } catch (e) {
+      status.textContent = `⚠ Error: ${e.message}`;
       return '';
     }
   }
@@ -828,12 +830,17 @@
     }
 
     const accion = editId ? 'actualizado' : 'agregado';
+    const imgGuardada = imagen;
     cerrarModal();
     renderTabla();
     editId = null;
-    toast('Guardando en GitHub...', 'ok');
+    toast('Publicando en GitHub...', 'ok');
     const ok = await guardarEnGitHub();
-    toast(ok ? `✓ Producto ${accion} y publicado` : `Producto ${accion} — configurá GitHub para publicar`, ok ? 'ok' : 'err');
+    if (ok) {
+      toast(`✓ Producto ${accion} y publicado${imgGuardada ? ' con imagen' : ''}`, 'ok');
+    } else {
+      toast(`Producto ${accion} — configurá GitHub para publicar`, 'err');
+    }
   }
 
   // ═══════════════════════════════════════════
