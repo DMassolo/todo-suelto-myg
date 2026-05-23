@@ -97,5 +97,16 @@
     "descripcion": "Talles M, L, XXL",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiuo5p5rx2",
+    "nombre": "Perfumes para ropa",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 4500,
+    "cantidad": 20,
+    "descripcion": "5000 ml fragancias: bebé, chanel. Lavadero, cony, vainicoco, jazmin,, frutilla",
+    "imagen": "",
+    "disponible": true
   }
 ]
