@@ -460,5 +460,16 @@
     "descripcion": "Colores: celeste y rosa",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw7cuwjl2",
+    "nombre": "Set de mate",
+    "marca": "Stanley",
+    "tipo": "unidad",
+    "precio": 18000,
+    "cantidad": 1,
+    "descripcion": "Yerbera, azucarera y mate con bombila",
+    "imagen": "",
+    "disponible": true
   }
 ]
