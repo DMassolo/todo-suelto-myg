@@ -7,6 +7,7 @@
     "cantidad": 15,
     "tipo": "suelto",
     "descripcion": "5 litros",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -17,6 +18,7 @@
     "cantidad": 8,
     "tipo": "suelto",
     "descripcion": "5 litros",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -27,6 +29,7 @@
     "cantidad": 5,
     "tipo": "suelto",
     "descripcion": "5 litros",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -37,6 +40,7 @@
     "cantidad": 12,
     "tipo": "suelto",
     "descripcion": "5 litros",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -47,6 +51,7 @@
     "cantidad": 20,
     "tipo": "pack",
     "descripcion": "4 rollos higiénicos grandes",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -57,6 +62,7 @@
     "cantidad": 10,
     "tipo": "unidad",
     "descripcion": "Rollo grande",
+    "imagen": "",
     "disponible": true
   }
 ]

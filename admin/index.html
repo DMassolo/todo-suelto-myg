@@ -352,6 +352,23 @@
     .github-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .github-grid .full { grid-column: 1 / -1; }
 
+    .img-upload-area {
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      overflow: hidden;
+      position: relative;
+    }
+    .img-upload-area:hover { border-color: var(--yellow); }
+    #img-placeholder { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    #img-preview-wrap { width: 100%; }
+    #img-preview-wrap img { width: 100%; max-height: 180px; object-fit: cover; display: block; }
+
     .gh-note {
       margin-top: 12px;
       padding: 10px 14px;
@@ -524,6 +541,21 @@
         <label>Descripción (opcional)</label>
         <input type="text" id="f-descripcion" placeholder="Ej: 5 litros, 4 rollos grandes...">
       </div>
+      <div class="form-field full">
+        <label>Foto del producto</label>
+        <div class="img-upload-area" id="img-upload-area" onclick="document.getElementById('f-imagen-file').click()">
+          <div id="img-preview-wrap" style="display:none">
+            <img id="img-preview" src="" alt="preview">
+          </div>
+          <div id="img-placeholder">
+            <span style="font-size:2rem">📷</span>
+            <span style="font-size:0.8rem; color:var(--muted); margin-top:4px">Clic para subir foto</span>
+          </div>
+        </div>
+        <input type="file" id="f-imagen-file" accept="image/*" style="display:none">
+        <input type="text" id="f-imagen-url" placeholder="O pegá una URL de imagen..." style="margin-top:8px">
+        <div id="img-upload-status" style="font-size:0.78rem; color:var(--muted); margin-top:4px; display:none"></div>
+      </div>
     </div>
     <div class="modal-actions">
       <button class="btn-sm btn-outline" onclick="cerrarModal()">Cancelar</button>
@@ -644,6 +676,103 @@
   }
 
   // ═══════════════════════════════════════════
+  //  IMAGEN
+  // ═══════════════════════════════════════════
+  let imagenPendiente = null; // { file, base64, ext }
+
+  document.getElementById('f-imagen-file').addEventListener('change', async function() {
+    const file = this.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+      const base64 = e.target.result;
+      document.getElementById('img-preview').src = base64;
+      document.getElementById('img-preview-wrap').style.display = 'block';
+      document.getElementById('img-placeholder').style.display = 'none';
+      const ext = file.name.split('.').pop().toLowerCase();
+      imagenPendiente = { file, base64, ext };
+      document.getElementById('f-imagen-url').value = '';
+      document.getElementById('img-upload-status').style.display = 'block';
+      document.getElementById('img-upload-status').textContent = '📎 Imagen lista — se sube al guardar el producto';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  document.getElementById('f-imagen-url').addEventListener('input', function() {
+    if (this.value) {
+      imagenPendiente = null;
+      document.getElementById('img-preview').src = this.value;
+      document.getElementById('img-preview-wrap').style.display = 'block';
+      document.getElementById('img-placeholder').style.display = 'none';
+      document.getElementById('img-upload-status').style.display = 'none';
+    }
+  });
+
+  function resetImagenForm() {
+    imagenPendiente = null;
+    document.getElementById('f-imagen-file').value = '';
+    document.getElementById('f-imagen-url').value = '';
+    document.getElementById('img-preview').src = '';
+    document.getElementById('img-preview-wrap').style.display = 'none';
+    document.getElementById('img-placeholder').style.display = 'flex';
+    document.getElementById('img-upload-status').style.display = 'none';
+  }
+
+  function cargarImagenEnForm(imagen) {
+    if (imagen) {
+      document.getElementById('f-imagen-url').value = imagen;
+      document.getElementById('img-preview').src = imagen;
+      document.getElementById('img-preview-wrap').style.display = 'block';
+      document.getElementById('img-placeholder').style.display = 'none';
+    } else {
+      resetImagenForm();
+    }
+  }
+
+  async function subirImagenGitHub(productoId) {
+    if (!imagenPendiente) return document.getElementById('f-imagen-url').value.trim();
+    const owner = localStorage.getItem('gh_owner');
+    const repo  = localStorage.getItem('gh_repo');
+    const token = localStorage.getItem('gh_token');
+    if (!owner || !repo || !token) {
+      toast('Configurá GitHub para subir imágenes', 'err');
+      return '';
+    }
+    const status = document.getElementById('img-upload-status');
+    status.style.display = 'block';
+    status.textContent = '⏳ Subiendo imagen...';
+    const filename = `img/${productoId}.${imagenPendiente.ext}`;
+    const content  = imagenPendiente.base64.split(',')[1];
+    let sha = null;
+    try {
+      const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filename}`, {
+        headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' }
+      });
+      if (r.ok) { const d = await r.json(); sha = d.sha; }
+    } catch {}
+    const body = { message: `Imagen: ${filename}`, content };
+    if (sha) body.sha = sha;
+    try {
+      const put = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filename}`, {
+        method: 'PUT',
+        headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      if (put.ok) {
+        const data = await put.json();
+        status.textContent = '✓ Imagen subida';
+        return data.content.download_url;
+      } else {
+        status.textContent = '⚠ Error al subir imagen';
+        return '';
+      }
+    } catch {
+      status.textContent = '⚠ Error al subir imagen';
+      return '';
+    }
+  }
+
+  // ═══════════════════════════════════════════
   //  CRUD
   // ═══════════════════════════════════════════
   function toggleDisponible(id, val) {
@@ -662,6 +791,7 @@
     document.getElementById('f-precio').value      = p.precio;
     document.getElementById('f-cantidad').value    = p.cantidad;
     document.getElementById('f-descripcion').value = p.descripcion || '';
+    cargarImagenEnForm(p.imagen || '');
     abrirModal();
   }
 
@@ -672,7 +802,7 @@
     toast('Producto eliminado', 'ok');
   }
 
-  function guardarProducto() {
+  async function guardarProducto() {
     const nombre   = document.getElementById('f-nombre').value.trim();
     const marca    = document.getElementById('f-marca').value.trim();
     const tipo     = document.getElementById('f-tipo').value;
@@ -685,11 +815,14 @@
       return;
     }
 
+    const id = editId || genId();
+    const imagen = await subirImagenGitHub(id);
+
     if (editId) {
       const p = productos.find(x => x.id === editId);
-      if (p) { p.nombre=nombre; p.marca=marca; p.tipo=tipo; p.precio=precio; p.cantidad=cantidad; p.descripcion=desc; }
+      if (p) { p.nombre=nombre; p.marca=marca; p.tipo=tipo; p.precio=precio; p.cantidad=cantidad; p.descripcion=desc; p.imagen=imagen || p.imagen || ''; }
     } else {
-      productos.push({ id: genId(), nombre, marca, tipo, precio, cantidad, descripcion: desc, disponible: true });
+      productos.push({ id, nombre, marca, tipo, precio, cantidad, descripcion: desc, imagen: imagen || '', disponible: true });
     }
 
     cerrarModal();
@@ -710,12 +843,14 @@
       document.getElementById('f-precio').value = '';
       document.getElementById('f-cantidad').value = '';
       document.getElementById('f-descripcion').value = '';
+      resetImagenForm();
     }
     document.getElementById('modal-overlay').classList.add('open');
   }
 
   function cerrarModal() {
     editId = null;
+    resetImagenForm();
     document.getElementById('modal-overlay').classList.remove('open');
   }
 

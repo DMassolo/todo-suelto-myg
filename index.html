@@ -219,13 +219,39 @@
       background: linear-gradient(145deg, var(--blue) 0%, #0b1958 100%);
       border: 1.5px solid var(--border);
       border-radius: 12px;
-      padding: 16px;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 0;
       transition: transform 0.2s, box-shadow 0.2s;
       position: relative;
       overflow: hidden;
+    }
+
+    .card-img-wrap {
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: rgba(0,0,0,0.2);
+      flex-shrink: 0;
+    }
+
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .card:hover .card-img-wrap img { transform: scale(1.04); }
+
+    .card-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
     }
 
     .card::before {
@@ -235,6 +261,7 @@
       height: 3px;
       background: linear-gradient(90deg, var(--yellow), var(--yellow2));
       border-radius: 12px 12px 0 0;
+      z-index: 1;
     }
 
     .card:hover {
@@ -490,18 +517,24 @@
 
       document.getElementById('productos-grid').innerHTML = filtrados.map(p => {
         const sinStock = !p.disponible || p.cantidad === 0;
+        const imgHtml = p.imagen
+          ? `<div class="card-img-wrap"><img src="${p.imagen}" alt="${p.nombre}" loading="lazy"></div>`
+          : '';
         return `
           <div class="card ${sinStock ? 'sin-stock' : ''}">
-            <div class="card-top">
-              <span class="tipo-tag">${tipoLabel(p.tipo)}</span>
-              ${stockTag(p)}
+            ${imgHtml}
+            <div class="card-body">
+              <div class="card-top">
+                <span class="tipo-tag">${tipoLabel(p.tipo)}</span>
+                ${stockTag(p)}
+              </div>
+              <div class="card-name">${p.nombre}</div>
+              ${p.marca       ? `<div class="card-brand">${p.marca}</div>` : ''}
+              ${p.descripcion ? `<div class="card-desc">${p.descripcion}</div>` : ''}
+              <hr class="card-divider">
+              <div class="card-price">${formatPrecio(p.precio)}</div>
+              <div class="card-qty">📦 ${p.cantidad} en stock</div>
             </div>
-            <div class="card-name">${p.nombre}</div>
-            ${p.marca    ? `<div class="card-brand">${p.marca}</div>` : ''}
-            ${p.descripcion ? `<div class="card-desc">${p.descripcion}</div>` : ''}
-            <hr class="card-divider">
-            <div class="card-price">${formatPrecio(p.precio)}</div>
-            <div class="card-qty">📦 ${p.cantidad} en stock</div>
           </div>`;
       }).join('');
     }
