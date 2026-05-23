@@ -273,5 +273,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivbt14phc",
+    "nombre": "Prestobarba 3",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 2300,
+    "cantidad": 10,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
