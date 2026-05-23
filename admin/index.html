@@ -531,11 +531,11 @@
       </div>
       <div class="form-field">
         <label>Precio *</label>
-        <input type="number" id="f-precio" placeholder="0" min="0">
+        <input type="text" id="f-precio" placeholder="0" inputmode="numeric">
       </div>
       <div class="form-field">
         <label>Cantidad en stock *</label>
-        <input type="number" id="f-cantidad" placeholder="0" min="0">
+        <input type="text" id="f-cantidad" placeholder="0" inputmode="numeric">
       </div>
       <div class="form-field full">
         <label>Descripción (opcional)</label>
@@ -866,9 +866,7 @@
     document.getElementById('modal-overlay').classList.remove('open');
   }
 
-  document.getElementById('modal-overlay').addEventListener('click', e => {
-    if (e.target === document.getElementById('modal-overlay')) cerrarModal();
-  });
+  // Modal no se cierra al tocar fuera — usar botón Cancelar
 
   // ═══════════════════════════════════════════
   //  GITHUB API
