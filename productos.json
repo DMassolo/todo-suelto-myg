@@ -75,5 +75,16 @@
     "descripcion": "1L",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiu909uez5",
+    "nombre": "Detergente premium",
+    "marca": "Generica",
+    "tipo": "suelto",
+    "precio": 7000,
+    "cantidad": 20,
+    "descripcion": "5L",
+    "imagen": "",
+    "disponible": true
   }
 ]
