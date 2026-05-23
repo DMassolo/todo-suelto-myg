@@ -174,5 +174,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv1oqqh3q",
+    "nombre": "Esponja para platos",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 1000,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
