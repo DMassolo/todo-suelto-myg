@@ -427,5 +427,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw58rys1l",
+    "nombre": "Set mate",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 4500,
+    "cantidad": 2,
+    "descripcion": "Yerbera, azucarera y mate con bombilla",
+    "imagen": "",
+    "disponible": true
   }
 ]
