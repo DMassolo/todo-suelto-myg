@@ -262,5 +262,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivbbmuwt1",
+    "nombre": "Prestobarba 2",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 1400,
+    "cantidad": 10,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
