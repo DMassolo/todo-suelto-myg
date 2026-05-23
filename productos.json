@@ -317,5 +317,16 @@
     "descripcion": "Paquete de 10 unidades",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivwmhl1v6",
+    "nombre": "Bolsa de consorcio 80 x 110",
+    "marca": "Mellis",
+    "tipo": "pack",
+    "precio": 3000,
+    "cantidad": 20,
+    "descripcion": "paquete de 10 unidades",
+    "imagen": "",
+    "disponible": true
   }
 ]
