@@ -207,5 +207,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv4d4ym2z",
+    "nombre": "Franela",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 1200,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
