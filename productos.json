@@ -240,5 +240,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv9s7daar",
+    "nombre": "Cepillo para baño",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 3500,
+    "cantidad": 3,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
