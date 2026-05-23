@@ -130,5 +130,16 @@
     "descripcion": "Secador doble goma",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiux1ki2bs",
+    "nombre": "Fuenton",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 4500,
+    "cantidad": 6,
+    "descripcion": "Fuenton de 14 Litros",
+    "imagen": "",
+    "disponible": true
   }
 ]
