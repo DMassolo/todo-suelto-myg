@@ -350,5 +350,16 @@
     "descripcion": "Solo color rosa",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivz2j0cel",
+    "nombre": "Canasto para ropa con tapa",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 14000,
+    "cantidad": 5,
+    "descripcion": "Solo color negro",
+    "imagen": "",
+    "disponible": true
   }
 ]
