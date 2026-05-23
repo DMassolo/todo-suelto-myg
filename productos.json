@@ -405,5 +405,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw3gxejau",
+    "nombre": "Alimento para Gato",
+    "marca": "Sabrositos",
+    "tipo": "suelto",
+    "precio": 3000,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
