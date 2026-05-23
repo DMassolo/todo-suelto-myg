@@ -383,5 +383,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw2f6g9pu",
+    "nombre": "Alimento para perro cachorro",
+    "marca": "Sabrositos",
+    "tipo": "suelto",
+    "precio": 2800,
+    "cantidad": 2,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
