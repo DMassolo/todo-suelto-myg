@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "nombre": "Lavandina",
+    "marca": "Generica",
+    "precio": 3000,
+    "cantidad": 15,
+    "tipo": "suelto",
+    "descripcion": "5 litros",
+    "disponible": true
+  },
+  {
+    "id": "2",
+    "nombre": "Desodorante de Piso",
+    "marca": "Generica",
+    "precio": 4500,
+    "cantidad": 8,
+    "tipo": "suelto",
+    "descripcion": "5 litros",
+    "disponible": true
+  },
+  {
+    "id": "3",
+    "nombre": "Jabón Líquido",
+    "marca": "Ariel / Skip",
+    "precio": 7500,
+    "cantidad": 5,
+    "tipo": "suelto",
+    "descripcion": "5 litros",
+    "disponible": true
+  },
+  {
+    "id": "4",
+    "nombre": "Suavizante",
+    "marca": "Celeste / Vivere",
+    "precio": 6000,
+    "cantidad": 12,
+    "tipo": "suelto",
+    "descripcion": "5 litros",
+    "disponible": true
+  },
+  {
+    "id": "5",
+    "nombre": "Papel Higiénico",
+    "marca": "Generica",
+    "precio": 3000,
+    "cantidad": 20,
+    "tipo": "pack",
+    "descripcion": "4 rollos higiénicos grandes",
+    "disponible": true
+  },
+  {
+    "id": "6",
+    "nombre": "Rollo de Cocina",
+    "marca": "Generica",
+    "precio": 3000,
+    "cantidad": 10,
+    "tipo": "unidad",
+    "descripcion": "Rollo grande",
+    "disponible": true
+  }
+]
