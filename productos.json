@@ -152,5 +152,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiv0obn1q3",
+    "nombre": "Rejillas blancas",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 1200,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
