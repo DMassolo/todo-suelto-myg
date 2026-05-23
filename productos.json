@@ -26,7 +26,7 @@
     "nombre": "Jabón Líquido",
     "marca": "Ariel / Skip",
     "precio": 7500,
-    "cantidad": 5,
+    "cantidad": 20,
     "tipo": "suelto",
     "descripcion": "5 litros",
     "imagen": "https://raw.githubusercontent.com/dmassolo/todo-suelto-myg/main/img/3.png",
