@@ -361,5 +361,16 @@
     "descripcion": "Solo color negro",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivzua3bt9",
+    "nombre": "Limpia vidrio secador",
+    "marca": "Piragua",
+    "tipo": "unidad",
+    "precio": 3000,
+    "cantidad": 2,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
