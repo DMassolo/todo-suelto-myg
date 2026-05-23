@@ -7,7 +7,7 @@
     "cantidad": 15,
     "tipo": "suelto",
     "descripcion": "5 litros",
-    "imagen": "",
+    "imagen": "https://raw.githubusercontent.com/DMassolo/todo-suelto-myg/main/img/1.jpg",
     "disponible": true
   },
   {
