@@ -56,9 +56,9 @@
   },
   {
     "id": "6",
-    "nombre": "Rollo de Cocina",
+    "nombre": "Rollo de Cocina clasico",
     "marca": "Generica",
-    "precio": 3000,
+    "precio": 1800,
     "cantidad": 20,
     "tipo": "unidad",
     "descripcion": "Rollo grande",
