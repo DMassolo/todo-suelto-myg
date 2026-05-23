@@ -471,5 +471,16 @@
     "descripcion": "Yerbera, azucarera y mate con bombila",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiw8650ne4",
+    "nombre": "Set de tuppera",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 10000,
+    "cantidad": 2,
+    "descripcion": "Solo color rosa",
+    "imagen": "",
+    "disponible": true
   }
 ]
