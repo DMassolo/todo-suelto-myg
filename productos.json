@@ -119,5 +119,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpiusij7wp5",
+    "nombre": "Secador de piso",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 3600,
+    "cantidad": 6,
+    "descripcion": "Secador doble goma",
+    "imagen": "",
+    "disponible": true
   }
 ]
