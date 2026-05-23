@@ -56,9 +56,9 @@
   },
   {
     "id": "6",
-    "nombre": "Rollo de Cocina clasico",
+    "nombre": "Rollo de Cocina",
     "marca": "Generica",
-    "precio": 1800,
+    "precio": 3000,
     "cantidad": 20,
     "tipo": "unidad",
     "descripcion": "Rollo grande",
@@ -281,6 +281,17 @@
     "tipo": "unidad",
     "precio": 2300,
     "cantidad": 10,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
+  },
+  {
+    "id": "mpivtf90702",
+    "nombre": "Rollo de cocina premium",
+    "marca": "Bonut",
+    "tipo": "suelto",
+    "precio": 2400,
+    "cantidad": 20,
     "descripcion": "",
     "imagen": "",
     "disponible": true
