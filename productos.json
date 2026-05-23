@@ -64,5 +64,16 @@
     "descripcion": "Rollo grande",
     "imagen": "https://raw.githubusercontent.com/dmassolo/todo-suelto-myg/main/img/6.png",
     "disponible": true
+  },
+  {
+    "id": "mpiu82jco65",
+    "nombre": "Jabon liquido de mano",
+    "marca": "Generica",
+    "tipo": "suelto",
+    "precio": 5500,
+    "cantidad": 20,
+    "descripcion": "1L",
+    "imagen": "",
+    "disponible": true
   }
 ]
