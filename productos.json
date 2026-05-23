@@ -251,5 +251,16 @@
     "descripcion": "",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpivaebj8v4",
+    "nombre": "Broches",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 1000,
+    "cantidad": 20,
+    "descripcion": "",
+    "imagen": "",
+    "disponible": true
   }
 ]
