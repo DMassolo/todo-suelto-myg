@@ -172,7 +172,7 @@
     "precio": 1000,
     "cantidad": 20,
     "descripcion": "",
-    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpiv15a653h-1779629387128.jpg",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -249,7 +249,7 @@
     "precio": 3500,
     "cantidad": 3,
     "descripcion": "",
-    "imagen": "",
+    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpiv9s7daar-1779629420057.jpg",
     "disponible": true
   },
   {
@@ -403,7 +403,7 @@
     "precio": 2900,
     "cantidad": 20,
     "descripcion": "",
-    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpiw31o9bij-1779629369838.jpg",
+    "imagen": "",
     "disponible": true
   },
   {
