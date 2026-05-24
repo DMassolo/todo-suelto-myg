@@ -194,7 +194,7 @@
     "precio": 600,
     "cantidad": 20,
     "descripcion": "",
-    "imagen": "",
+    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpiv2exb3c9-1779629475522.jpg",
     "disponible": true
   },
   {
@@ -249,7 +249,7 @@
     "precio": 3500,
     "cantidad": 3,
     "descripcion": "",
-    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpiv9s7daar-1779629420057.jpg",
+    "imagen": "",
     "disponible": true
   },
   {
