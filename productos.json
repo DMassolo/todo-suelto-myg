@@ -515,5 +515,16 @@
     "descripcion": "Colores celeste y roja",
     "imagen": "",
     "disponible": true
+  },
+  {
+    "id": "mpn6e1ry3t9",
+    "nombre": "Set de tapper x 3",
+    "marca": "Generica",
+    "tipo": "unidad",
+    "precio": 10000,
+    "cantidad": 1,
+    "descripcion": "Solo color rosa",
+    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpn6e1ry3t9-1779832623742.png",
+    "disponible": true
   }
 ]
