@@ -40,7 +40,7 @@
     "cantidad": 20,
     "tipo": "suelto",
     "descripcion": "5 litros",
-    "imagen": "https://raw.githubusercontent.com/dmassolo/todo-suelto-myg/main/img/4.png",
+    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/4-1779917081578.png",
     "disponible": true
   },
   {
@@ -117,7 +117,7 @@
     "precio": 4500,
     "cantidad": 4,
     "descripcion": "",
-    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpiurm8ifam-1779917009125.png",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -271,7 +271,7 @@
     "precio": 1400,
     "cantidad": 10,
     "descripcion": "",
-    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpivbbmuwt1-1779917024709.jpg",
+    "imagen": "",
     "disponible": true
   },
   {
@@ -282,7 +282,7 @@
     "precio": 2300,
     "cantidad": 10,
     "descripcion": "",
-    "imagen": "https://raw.githubusercontent.com/Dmassolo/Todo-suelto-myg/main/img/mpivbt14phc-1779917037493.jpg",
+    "imagen": "",
     "disponible": true
   },
   {
